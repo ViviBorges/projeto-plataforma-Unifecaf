@@ -1,0 +1,21 @@
+# Pastas geradas pela Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+
+# Metadados do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Executáveis e DLLs
+*.exe
+*.dll
+
+# Configurações de usuário do Unity
+[Uu]ser[Ss]ettings/
+
+# Logs
+*.log
+
