@@ -16,38 +16,16 @@
 * Dependências: UnityPlayer.dll, UnityCrashHandler64.exe.
 * Git/GitHub (planejado para versionar o projeto-fonte).
 
----
 
-## 2. Estrutura do Repositório (GitHub)
+## 2. README.md (Visão Pública)
 
-```
-/ (raiz)
-├─ .gitignore
-├─ README.md
-├─ LICENSE.md
-├─ /Build
-│  ├─ Projeto Plataforma Unifecaf.exe        # Executável Windows
-│  ├─ UnityPlayer.dll                       # Biblioteca Unity
-│  └─ UnityCrashHandler64.exe                # Handler de crash
-└─ /Documentation
-   ├─ GameDesignDocument.md
-   ├─ TechnicalDesign.md
-   └─ TestPlan.md
-```
-
-**.gitignore:** deve incluir pastas geradas (`Library/`, `Temp/`, `Build/` de Unity) e arquivos do editor.
-
----
-
-## 3. README.md (Visão Pública)
-
-### 3.1 Título e Descrição
+### 2.1 Título e Descrição
 
 `Projeto Plataforma Unifecaf – Jogo 2D de Plataforma`
 
 > Executável Windows demonstrando mecânicas de plataforma 2D: movimento, pulo, coleta de itens e checkpoints.
 
-### 3.2 Instalação e Execução
+### 2.2 Instalação e Execução
 
 1. Clone o repositório:
 
@@ -61,42 +39,42 @@ git clone (https://github.com/ViviBorges/projeto-plataforma-Unifecaf.git)
 3. Certifique-se de que `Projeto Plataforma Unifecaf.exe`, `UnityPlayer.dll` e `UnityCrashHandler64.exe` estejam juntos.  
 4. Execute o arquivo `Projeto Plataforma Unifecaf.exe` em Windows.
 
-### 3.3 Controles
+### 2.3 Controles
 - **A/D ou ←/→:** Andar horizontalmente  
 - **Shift:** Correr  
 - **Espaço:** Pular  
 - **E:** Coletar itens
 
-### 3.4 Mecânicas Observadas no Build
+### 2.4 Mecânicas Observadas no Build
 - Movimento e corrida responsivos.  
 - Pulso simples, permitindo saltos precisos.  
 - Coleta de cristais que incrementam pontuação e aparecem no HUD.  
 - Checkpoints em fase 3, posicionados em plataformas móveis.
 
-### 3.5 Fases no Build
+### 2.5 Fases no Build
 - **Fase 1 (Tutorial):** Plataforma estática sem inimigos.  
 - **Fase 2 (Obstáculos Móveis):** Plataformas que se movem verticalmente e horizontalmente.  
 - **Fase 3 (Checkpoint):** Inclusão de pontos de salvamento e desafios de plataforma dinâmicos.
 
-### 3.6 Licença
+### 2.6 Licença
 [MIT License](LICENSE.md)
 
 ---
 
-## 4. Documentação Interna (fonte planejada)
+## 3. Documentação Interna (fonte planejada)
 
-### 4.1 Game Design Document (GameDesignDocument.md)
+### 3.1 Game Design Document (GameDesignDocument.md)
 
 - **Narrativa:** Personagem navega por ambientes repletos de estrelas e plataformas móveis.  
 - **Mapas de Fase:** Diagrama das quatro fases, indicando spawn de itens e localização de checkpoints.  
 - **Mecânicas:** Parâmetros ajustados (velocidade = 5 unidades/s, força de pulo = 7 unidades).
 
-### 4.2 Design Técnico (TechnicalDesign.md)
+### 3.2 Design Técnico (TechnicalDesign.md)
 - **Scripts Planejados:** `PlayerController.cs`, `CheckpointManager.cs`, `Collectible.cs`, `AudioManager.cs`.  
 - **Componentes Unity:** Rigidbody2D, Collider2D, Animator Controller, Tilemap.  
 - **Build Pipeline:** Configurações de Player Settings para Windows Standalone.
 
-### 4.3 Plano de Testes (TestPlan.md)
+### 3.3 Plano de Testes (TestPlan.md)
 - **Testes de Jogabilidade:**  
   - Andar e correr em diversas plataformas.  
   - Saltos em bordas (garantir `isGrounded` antes de pular).  
@@ -106,7 +84,7 @@ git clone (https://github.com/ViviBorges/projeto-plataforma-Unifecaf.git)
 
 ---
 
-## 5. Versionamento no GitHub (planejamento)
+## 4. Versionamento no GitHub (planejamento)
 
 - **Branch `main`:** código-fonte estável (build atual).  
 - **Branches de feature:** `feature/<nome>`, ex: `feature/collectibles`.  
@@ -115,7 +93,7 @@ git clone (https://github.com/ViviBorges/projeto-plataforma-Unifecaf.git)
 
 ---
 
-## 6. Próximos Passos
+## 5. Próximos Passos
 
 1. Obter o projeto-fonte Unity para inclusão em `/Assets` e scripts originais.  
 2. Preencher a documentação interna com diagramas e detalhes de implementação.  
