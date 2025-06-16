@@ -17,7 +17,7 @@
 * Git/GitHub (planejado para versionar o projeto-fonte).
 
 
-## 2. README.md (Visão Pública)
+## 2. README.md 
 
 ### 2.1 Título e Descrição
 
